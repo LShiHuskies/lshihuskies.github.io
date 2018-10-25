@@ -1,4 +1,5 @@
 let counter = 0;
+let innerCounter = 0;
 const container = document.getElementById('happy');
 const button = document.getElementById('play');
 
@@ -21,11 +22,24 @@ const makeRectangle = (event) => {
 
 
 container.addEventListener('click', (event) => {
+  innerCounter = 0;
   if (event.target.id !== 'happy') {
     // alert(event.target.id);
     const rec = document.getElementById(`${event.target.id}`);
+    makeInnerRectangle(rec)
+    // const innerRectangle = document.createElement('DIV');
+    // innerRectangle.setAttribute('class', 'innerRectangle');
+    // rec.appendChild(innerRectangle);
+  }
+})
+
+const makeInnerRectangle = (rec) => {
+  innerCounter++;
+  if (innerCounter === 1) {
     const innerRectangle = document.createElement('DIV');
     innerRectangle.setAttribute('class', 'innerRectangle');
     rec.appendChild(innerRectangle);
+  } else {
+    console.log('this is already taken');
   }
-})
+}
