@@ -26,3 +26,8 @@ h1 {
   font-weight: normal;
   color: green;
 }
+
+#play {
+  width: 30px;
+  height: 30px;
+}
