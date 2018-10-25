@@ -1,3 +1,5 @@
+let counter = 0;
+
 const button = document.getElementById('play');
 
 button.addEventListener('click', (event) => {
@@ -7,7 +9,12 @@ button.addEventListener('click', (event) => {
 })
 
 const makeRectangle = (event) => {
-  console.log('hi')
-  let rectangle = document.createElement('DIV');
-  console.log(rectangle)
+  counter++;
+  const container = document.getElementById('happy');
+
+  const rectangle = document.createElement('DIV');
+  rectangle.setAttribute('ID', `${counter}`);
+  rectangle.setAttribute('CLASS', 'rectangle')
+  container.appendChild(rectangle);
+
 }

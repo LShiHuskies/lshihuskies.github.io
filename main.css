@@ -31,3 +31,10 @@ h1 {
   width: 30px;
   height: 30px;
 }
+
+.rectangle {
+  width: 100px;
+  height: 100px;
+  border: solid 1.5px black;
+  display: inline-block;
+}
