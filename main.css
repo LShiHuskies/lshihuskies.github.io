@@ -18,8 +18,16 @@ body {
   top: 3%;
 }
 
-#name {
+#left {
+  position: absolute;
+  top: 3%;
+  height: 20%;
+  width: 10%;
+  margin-left: 5%;
+}
 
+#name {
+  text-align: center;
 }
 
 #self {
