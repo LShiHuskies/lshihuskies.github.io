@@ -60,7 +60,7 @@ button:hover {
   position: absolute;
   width: 10%;
   height: 10%;
-  top: 30%;
+  top: 90%;
   left: 0%;
 }
 
@@ -68,8 +68,8 @@ button:hover {
   position: absolute;
   width: 7%;
   height: 6%;
-  top: 32%;
-  left: 8%;
+  top: 92%;
+  left: 47%;
 
 }
 
@@ -77,8 +77,15 @@ button:hover {
   position: absolute;
   width: 10%;
   height: 10%;
-  top: 30%;
-  left: 16%;
+  top: 90%;
+  left: 88%;
+}
+
+#technical {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  color: #fff;
 }
 
 
