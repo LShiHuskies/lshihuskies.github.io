@@ -12,7 +12,7 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #fff;
-  left: 75%;
+  left: 78%;
   width: 20%;
   position: absolute;
   top: 6%;
@@ -146,7 +146,7 @@ ul {
     float: right;
     position: absolute;
     top: 0px;
-    left: 65%;
+    left: 62.5%;
     width: 500px;
 }
 
@@ -182,7 +182,7 @@ a:hover {
   height: 400px;
   position: absolute;
   top: 35%;
-  left: 27%;
+  left: 25%;
   background-color: gray;
 }
 
