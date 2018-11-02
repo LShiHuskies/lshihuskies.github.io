@@ -27,7 +27,7 @@ body {
   top: 6%;
   height: 200px;
   width: 200px;
-  margin-left: 5%;
+  margin-left: 2%;
   background-image: url('assets/louisShiPhoto.jpeg');
   text-align: center;
 }
@@ -161,7 +161,6 @@ ul {
     position: absolute;
     top: 0px;
     left: 65%;
-    border: 1px solid #555;
     width: 500px;
 }
 
@@ -174,7 +173,7 @@ li a {
     border: 1px solid #555;
 }
 
-li {
+.horizontal {
   display: inline;
 }
 
@@ -197,7 +196,7 @@ a:hover {
   height: 400px;
   position: absolute;
   top: 35%;
-  left: 30%;
+  left: 27%;
   background-color: gray;
 }
 
@@ -223,10 +222,28 @@ img:hover {
 
 .project:hover {
   border: 10px solid red;
+  color: blue;
 }
 
-#greet {
+#greetTwo {
   text-align: center;
   animation-duration: 1s;
-  animation-iteration-count: 5;
+  animation-iteration-count: 15;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+#secondOne {
+  position: absolute;
+  left: 0%;
+  top: 20%;
+  width: 100px;
+}
+
+#vertical {
+  float: left;
+  position: absolute;
+}
+
+#notfirstVertical {
+  margin-top: 5%;
 }
