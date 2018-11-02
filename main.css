@@ -94,6 +94,34 @@ button:hover {
 }
 
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 80%;
+}
+
+li a {
+    display: inline-block;
+    width: 60px;
+    background-color: #dddddd;
+    color: black;
+}
+
+li {
+  display: inline;
+}
+
+a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
 .rectangle {
   width: 100px;
   height: 100px;
