@@ -60,9 +60,29 @@ button:hover {
   position: absolute;
   width: 10%;
   height: 10%;
-  top: 40%;
+  top: 30%;
   left: 0%;
 }
+
+#github {
+  position: absolute;
+  width: 7%;
+  height: 6%;
+  top: 32%;
+  left: 8%;
+
+}
+
+#linkedin {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 30%;
+  left: 16%;
+}
+
+
+
 
 .rectangle {
   width: 100px;
