@@ -57,11 +57,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 const handleClick = (event) => {
   count++;
-  console.log(count);
   if (count === 1) {
     const divBox = document.createElement('DIV');
     divBox.setAttribute('id', `box-${count}`);
     divBox.setAttribute('class', `boxes`);
+    const greet = document.createElement('H3');
+    greet.setAttribute('class', 'animated infinite bounce delay-1s');
+    greet.setAttribute('id', 'greet');
+    greet.innerText = 'Thank you for visiting my page!'
+    divBox.appendChild(greet);
     body.appendChild(divBox);
   }
 }
