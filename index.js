@@ -35,7 +35,6 @@ const handleClick = (event) => {
       handleDivBox(event);
     })
 
-
   } else if (count === 0) {
     const divBox = document.getElementsByClassName('boxes')[0];
     divBox.remove();
