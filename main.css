@@ -102,14 +102,18 @@ ul {
     float: right;
     position: absolute;
     top: 0px;
-    left: 80%;
+    left: 65%;
+    border: 1px solid #555;
+    width: 500px;
 }
 
 li a {
     display: inline-block;
-    width: 60px;
+    width: 100px;
     background-color: #dddddd;
     color: black;
+    border: 1px solid #555;
+    text-align: center;
 }
 
 li {
@@ -121,6 +125,9 @@ a:hover {
     color: white;
 }
 
+.notFirst {
+  margin-left: 26.65px;
+}
 
 .rectangle {
   width: 100px;
