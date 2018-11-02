@@ -45,6 +45,8 @@
 // }
 
 document.addEventListener("DOMContentLoaded", function(event) {
+  let count = 0;
+  const body = document.getElementById('body');
   const louisImage = document.getElementById('left')
   louisImage.addEventListener('click', (event) => {
     if (event.target.id === 'left') {
@@ -54,8 +56,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 const handleClick = (event) => {
-  const divBox = document.createElement('DIV');
-  divBox.setAttribute('id', 'box');
+  count++;
+  console.log(count);
+  if (count === 1) {
+    const divBox = document.createElement('DIV');
+    divBox.setAttribute('id', `box-${count}`);
+    divBox.setAttribute('class', `boxes`);
+    body.appendChild(divBox);
+  }
 }
 
 
