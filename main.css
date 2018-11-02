@@ -142,7 +142,7 @@ button:hover {
 #technical {
   position: absolute;
   top: 45%;
-  left: 5%;
+  left: 2%;
   color: #fff;
 }
 
@@ -235,8 +235,9 @@ img:hover {
 #secondOne {
   position: absolute;
   left: 0%;
-  top: 20%;
+  top: 25%;
   width: 100px;
+  margin-left: 5px;
 }
 
 #vertical {
@@ -244,6 +245,11 @@ img:hover {
   position: absolute;
 }
 
+#firstVertical {
+  padding-top: 10%;
+}
+
 #notfirstVertical {
-  margin-top: 5%;
+  margin-top: 20%;
+  padding-top: 10%;
 }

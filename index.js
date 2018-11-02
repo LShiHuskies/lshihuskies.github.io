@@ -56,30 +56,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 const handleClick = (event) => {
-  count++;
+  if (count === 0) {
+    count++;
+  } else if (count === 1) {
+    count--;
+  }
   if (count === 1) {
     const divBox = document.createElement('DIV');
-    divBox.setAttribute('id', `box-${count}`);
+    divBox.setAttribute('id', 'box-1');
     divBox.setAttribute('class', `boxes`);
     const greet = document.createElement('H3');
     greet.setAttribute('id', 'greet');
     greet.setAttribute('class', 'animated infinite bounce delay-1s');
     greet.innerText = 'Thank you for visiting my page!'
     divBox.appendChild(greet);
-    setTimeout(divBox.setAttribute('id', 'greetTwo'), 8000)
+    divBox.setAttribute('id', 'greetTwo')
     let vertical = makeVerticalNavBar();
     divBox.innerHTML += vertical;
 
     body.appendChild(divBox);
+  } else if (count === 0) {
+    const divBox = document.getElementsByClassName('boxes')[0];
+    divBox.remove();
   }
 }
 
 const makeVerticalNavBar = () => {
   let vertical = `<ul id='secondOne'>
-                  <li class='vertical'><a href="https://www.linkedin.com/in/louis-shi-b772b472/" target='_blank'> About Me </a></li>
+                  <li class='vertical'><a id='firstVertical' href="https://www.linkedin.com/in/louis-shi-b772b472/" target='_blank'> About Me </a></li>
                   <li class='vertical'><a id='notfirstVertical' href="https://medium.com/@louis.shi" target='_blank'>Hobbies</a></li>
                   <li class='vertical'><a id='notfirstVertical' href="https://github.com/LShiHuskies" target='_blank'>Technical</a></li>
-                  <li class='vertical'><a id='notfirstVertical' href="mailto: Shi.Louis2@gmail.com" target='_blank'>Contact</a></li>
+                  <li class='vertical'><a id='notfirstVertical' href="mailto: Shi.Louis2@gmail.com" target='_blank'>Message Me</a></li>
               </ul>`
   return vertical;
 }
