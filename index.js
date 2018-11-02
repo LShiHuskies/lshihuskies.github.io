@@ -1,4 +1,16 @@
 
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  let count = 0;
+  const body = document.getElementById('body');
+  const louisImage = document.getElementById('left')
+  louisImage.addEventListener('click', (event) => {
+    if (event.target.id === 'left') {
+      handleClick(event);
+    }
+  })
+
+
 const handleClick = (event) => {
   if (count === 0) {
     count++;
