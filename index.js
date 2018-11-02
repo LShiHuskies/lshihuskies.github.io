@@ -41,14 +41,29 @@
 //     rec.appendChild(innerRectangle);
 //   } else {
 //     console.log('this is already taken');
+// }
+// }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const louisImage = document.getElementById('left')
+  louisImage.addEventListener('click', (event) => {
+    if (event.target.id === 'left') {
+      handleClick(event);
+    }
+  })
 
 
-
-
-
-
-
-
-
-  }
+const handleClick = (event) => {
+  const divBox = document.createElement('DIV');
+  divBox.setAttribute('id', 'box');
+  
 }
+
+
+
+
+
+
+
+
+})
