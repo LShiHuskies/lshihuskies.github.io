@@ -83,12 +83,15 @@ button:hover {
 
 #technical {
   position: absolute;
-  top: 35%;
+  top: 45%;
   left: 5%;
   color: #fff;
 }
 
-
+.project {
+  font-size: 12px;
+  text-align: center;
+}
 
 
 .rectangle {
