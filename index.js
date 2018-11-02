@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 const handleClick = (event) => {
   const divBox = document.createElement('DIV');
   divBox.setAttribute('id', 'box');
-  
 }
 
 

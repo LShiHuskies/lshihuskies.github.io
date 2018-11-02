@@ -1,5 +1,5 @@
 body {
-  background-image: url('http://elsikbluecetane.com/wp-content/uploads/2018/05/business-professional-background-images-14.jpg');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxW3knJ6g4hDKWzxKKDo8X5L0CaLHFaWCay9ER7PUgd0xPLWLq');
   background-repeat: no-repeat;
   width: 100%;
   background-size: 100% 100%;
@@ -15,7 +15,7 @@ body {
   left: 75%;
   width: 20%;
   position: absolute;
-  top: 3%;
+  top: 6%;
 }
 
 #name {
@@ -24,9 +24,9 @@ body {
 
 #left {
   position: absolute;
-  top: 3%;
-  height: 22.5%;
-  width: 12%;
+  top: 6%;
+  height: 200px;
+  width: 200px;
   margin-left: 5%;
   background-image: url('assets/louisShiPhoto.jpeg');
   text-align: center;
@@ -108,4 +108,12 @@ button:hover {
   border: solid 1.5px black;
   display: inline-block;
   text-align: center;
+}
+
+img:hover {
+  border: 10px solid red;
+}
+
+.project:hover {
+  border: 10px solid red;
 }
