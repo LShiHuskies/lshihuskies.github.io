@@ -148,6 +148,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
           const body = document.getElementById('body');
           body.innerHTML += imgTag;
         })
+        const body =  document.getElementById('body');
+        body.addEventListener('click', (event) => {
+          handleTheWholeBody(event);
+        })
 
 
         } else if (event.target.innerText === 'Technical') {
@@ -159,5 +163,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
+      const handleTheWholeBody = (event) => {
+        const aboutBox = document.getElementById('ABOUTME');
+        const hobbyBox = document.getElementById('HOBBY');
+        // console.log(hobbyBox);
+      if (hobbyBox !== null) {
+        if (event.target.innerText === 'Hobbies') {
+            alert('let delete everything now');
+        }
+      }
+    }
 
 })

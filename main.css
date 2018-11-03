@@ -202,10 +202,6 @@ a:hover {
   text-align: center;
 }
 
-img:hover {
-  border: 10px solid red;
-}
-
 .project:hover {
   border: 10px solid red;
   color: blue;
@@ -263,6 +259,7 @@ img:hover {
   margin-left: 15%;
   margin-top: -7%;
 }
+
 
 #imgTag-1 {
   position: absolute;
