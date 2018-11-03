@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
       let count = 0;
+      let hobCount = 0;
       const body = document.getElementById('body');
       const louisImage = document.getElementById('left')
       louisImage.addEventListener('click', (event) => {
@@ -104,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           hobbyBox.setAttribute('id', 'HOBBY');
 
           const hobbies = ['First and foremost I really love programming, if you ever want me to help design your website or need any assistance with programming, please do not hesitate to contact me.',
-                            'When I am not programming, I enjoy playing Poker, I specialize in No-Limit Texas Holdem Cash Games but also play Pot Limit Ohama, both High and Low',
+                            'When I am not programming, I enjoy playing Poker, I specialize in No-Limit Texas Holdem Cash Games but also play Pot Limit Omaha, both High and Low',
                           'I also enjoy playing Chess, I grew up playing both Chinese Chess as well as Chess.',
                           'I enjoy Taekwondo, specifically Olympic Style Taekwondo and currently hold a Black Belt',
                           'I enjoy watching Basketball, both College Basketball and NBA; my favorite College Team is my UCONN Huskies and my favorite NBA team is the Boston Celtics',
@@ -161,17 +162,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       }
 
-
-
       const handleTheWholeBody = (event) => {
+
         const aboutBox = document.getElementById('ABOUTME');
         const hobbyBox = document.getElementById('HOBBY');
-        // console.log(hobbyBox);
-      if (hobbyBox !== null) {
-        if (event.target.innerText === 'Hobbies') {
-            alert('let delete everything now');
+
+      if (hobCount > 0) {
+         if (hobbyBox === null) {
+          hobCount = 0;
+          handleDivBox(event)
+        } else if (hobbyBox !== null && event.target.innerText === 'Hobbies') {
+            let query = document.querySelectorAll('IMG');
+            let arr = Array.from(query);
+
+            let obj = arr.filter(tag => tag.id !== 'resume' && tag.id !== 'linkedin' && tag.id !== 'github');
+            obj.forEach(tag => tag.remove());
+            hobbyBox.remove();
         }
       }
+      hobCount++;
     }
 
 })
