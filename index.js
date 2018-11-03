@@ -153,10 +153,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
           const imageArr = ['http://www.tutorialrays.com/admin/images/courses/skl-icon-3.png',
                             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL08rEvslkZm7r7T8fj4GbKZ-f7mMt0uVqJPKpaO_IYyNlqW7V',
                             'http://www.pngall.com/wp-content/uploads/2016/05/C-PNG-Clipart.png',
-                            'https://banner2.kisspng.com/20180802/vty/kisspng-clip-art-microsoft-azure-sql-database-microsoft-sq-skills-5b63119fd6c064.4634905815332192318796.jpg',
+                            'http://www.mikefal.net/wp-content/uploads/2016/05/logoAzureSql.png',
                             'https://miro.medium.com/max/480/1*To2H39eauxaeYxYMtV1afQ.png',
                             'http://codedistrict.io/wp-content/uploads/2017/12/reduxLogo.png',
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/2000px-Ruby_On_Rails_Logo.svg.png',
+                            'https://www.pubnub.com/wp-content/uploads/2015/01/Rest-vs-WebSockets-2.png',
                             'https://www.vectorlogo.zone/logos/postgresql/postgresql-card.png',
                             'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1280px-SQLite370.svg.png',
                           'https://banner2.kisspng.com/20180503/cee/kisspng-web-development-html-css3-the-ohana-code-logo-2cpaper-projection-shaded_1660937-html-dropdown-js-5aebd5631cd291.7591600015254050271181.jpg'];
@@ -166,11 +166,46 @@ document.addEventListener("DOMContentLoaded", function(event) {
           const imgBox = document.createElement('DIV');
           imgBox.setAttribute('id','langBox');
 
-          imageArr.forEach(tag => { let img = document.createElement('IMG');
-            img.setAttribute('id', `img-${imageArr.indexOf(tag)}`)
-            img.setAttribute('class', `animated fadeInRight delay-${imageArr.indexOf(tag)}s`);
-            img.setAttribute('src', `${tag}`);
-            imgBox.appendChild(img);
+          imageArr.forEach(tag => {
+            if (imageArr.indexOf(tag) < 6){
+              let img = document.createElement('IMG');
+              img.setAttribute('id', `img-${imageArr.indexOf(tag)}`)
+              img.setAttribute('class', `animated fadeInRight delay-${imageArr.indexOf(tag)}s`);
+              img.setAttribute('src', `${tag}`);
+              imgBox.appendChild(img);
+            } else if (imageArr.indexOf(tag) === 6) {
+              setTimeout(function(){
+                let img = document.createElement('IMG');
+                img.setAttribute('id', `img-${imageArr.indexOf(tag)}`)
+                img.setAttribute('class', `animated fadeInRight delay-${imageArr.indexOf(tag)}s`);
+                img.setAttribute('src', `${tag}`);
+                imgBox.appendChild(img);
+              }, 6000)
+            } else if (imageArr.indexOf(tag) === 7) {
+              setTimeout(function(){
+                let img = document.createElement('IMG');
+                img.setAttribute('id', `img-${imageArr.indexOf(tag)}`)
+                img.setAttribute('class', `animated fadeInRight delay-${imageArr.indexOf(tag)}s`);
+                img.setAttribute('src', `${tag}`);
+                imgBox.appendChild(img);
+              }, 7000)
+            } else if (imageArr.indexOf(tag) === 8) {
+              setTimeout(function(){
+                let img = document.createElement('IMG');
+                img.setAttribute('id', `img-${imageArr.indexOf(tag)}`)
+                img.setAttribute('class', `animated fadeInRight delay-${imageArr.indexOf(tag)}s`);
+                img.setAttribute('src', `${tag}`);
+                imgBox.appendChild(img);
+              }, 8000)
+            } else if (imageArr.indexOf(tag) === 9) {
+              setTimeout(function(){
+                let img = document.createElement('IMG');
+                img.setAttribute('id', `img-${imageArr.indexOf(tag)}`)
+                img.setAttribute('class', `animated fadeInRight delay-${imageArr.indexOf(tag)}s`);
+                img.setAttribute('src', `${tag}`);
+                imgBox.appendChild(img);
+              }, 9000)
+            }
 
         } )
 

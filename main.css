@@ -318,51 +318,80 @@ a:hover {
 }
 
 #img-0 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
+  position: absolute;
+  top: 23%;
+  left: 23%;
 }
 
 #img-1 {
-  width: 20%;
-  height: 25%;
+  width: 24%;
+  height: 18%;
+  position: absolute;
+  top: 23%;
+  left: 43%;
 }
 
 #img-2 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
+  position: absolute;
+  top: 23%;
+  left: 73%;
 }
 
 #img-3 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
+  position: absolute;
+  top: 48%;
+  left: 23%;
 }
 
 #img-4 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
+  position: absolute;
+  top: 48%;
+  left: 40%;
 }
 
 #img-5 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
+  position: absolute;
+  top: 48%;
+  left: 56%;
 }
 
 #img-6 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
+  position: absolute;
+  top: 48%;
+  left: 72%;
+
 }
 
 #img-7 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
+  position: absolute;
+  top: 80%;
+  left: 80%;
 }
 
 #img-8 {
   width: 20%;
   height: 25%;
+  position: absolute;
+  top: 100%;
 }
 
 #img-9 {
   width: 30%;
   height: 25%;
+  position: absolute;
+  top: 100%;
 }
