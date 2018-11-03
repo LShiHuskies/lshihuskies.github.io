@@ -378,20 +378,22 @@ a:hover {
   width: 12%;
   height: 18%;
   position: absolute;
-  top: 80%;
-  left: 80%;
+  top: 73%;
+  left: 23%;
 }
 
 #img-8 {
-  width: 20%;
-  height: 25%;
+  width: 12%;
+  height: 18%;
   position: absolute;
-  top: 100%;
+  top: 73%;
+  left: 40%;
 }
 
 #img-9 {
-  width: 30%;
-  height: 25%;
+  width: 24%;
+  height: 18%;
   position: absolute;
-  top: 100%;
+  top: 73%;
+  left: 58%;
 }

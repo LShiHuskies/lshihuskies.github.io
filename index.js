@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const handleDivBox = (event) => {
       const aboutBox = document.getElementById('ABOUTME');
       const hobbyBox = document.getElementById('HOBBY');
+      const imgBox = document.getElementById('langBox');
 
       if (event.target.innerText === 'About Me'
       || event.target.innerText === 'Hobbies'
@@ -61,8 +62,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
           aboutBox.remove();
         }
         if (hobbyBox !== null) {
-
           hobbyBox.remove();
+        }
+        if (imgBox !== null) {
+          imgBox.remove();
         }
       }
       if (event.target.innerText === 'About Me') {
@@ -161,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                             'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1280px-SQLite370.svg.png',
                           'https://banner2.kisspng.com/20180503/cee/kisspng-web-development-html-css3-the-ohana-code-logo-2cpaper-projection-shaded_1660937-html-dropdown-js-5aebd5631cd291.7591600015254050271181.jpg'];
 
-          // console.log(imageArr);
+
 
           const imgBox = document.createElement('DIV');
           imgBox.setAttribute('id','langBox');
