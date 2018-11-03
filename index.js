@@ -119,9 +119,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         `<img id='imgTag-5' class='animated fadeInRight delay-4s' src='http://www.stickpng.com/assets/images/58419c6aa6515b1e0ad75a61.png' />`,
         `<img id='imgTag-6' class='animated fadeInRight delay-5s' src='https://www.sjffcc.org/images/volunteer_cartoon.png' />`];
 
-        // console.log(hobbies);
-        // console.log(hobbyImage);
-
         hobbies.forEach(element => { let pTag = document.createElement('P');
 
           pTag.setAttribute('class', `animated fadeInRight delay-${hobbies.indexOf(element)}s`);
@@ -130,13 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             hobbyBox.appendChild(pTag)
           } else if (hobbies.indexOf(element) === 5) {
             pTag.innerText = element;
-            hobbyBox.appendChild(pTag)
-            // setTimeout(function handleSix() {
-            //   let pTag = document.createElement('P');
-            //   pTag.setAttribute('class', `animated fadeInRight delay-${hobbies.indexOf(element)}s`);
-            //   pTag.innerText = element;
-            //   hobbyBox.appendChild(pTag);
-            // }, 5000);
+            hobbyBox.appendChild(pTag);
           }
           const divBox = document.getElementById('greetTwo');
 
@@ -154,8 +145,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
           handleTheWholeBody(event);
         })
 
-
         } else if (event.target.innerText === 'Technical') {
+          const languagesBox = ['JavaScript', 'Ruby', 'C++', 'SQL'];
+          const frameWorkBox = ['React', 'Rails'];
+          const others = ['Redux', 'HTML/CSS', 'PostgreSQL', 'SQLite3', 'Bootstrap', 'ActiveRecord Associations'];
+
+          const imageArr = ['http://www.tutorialrays.com/admin/images/courses/skl-icon-3.png',
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL08rEvslkZm7r7T8fj4GbKZ-f7mMt0uVqJPKpaO_IYyNlqW7V',
+                            'http://www.pngall.com/wp-content/uploads/2016/05/C-PNG-Clipart.png',
+                            'https://banner2.kisspng.com/20180802/vty/kisspng-clip-art-microsoft-azure-sql-database-microsoft-sq-skills-5b63119fd6c064.4634905815332192318796.jpg',
+                            'https://miro.medium.com/max/480/1*To2H39eauxaeYxYMtV1afQ.png',
+                            'http://codedistrict.io/wp-content/uploads/2017/12/reduxLogo.png',
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/2000px-Ruby_On_Rails_Logo.svg.png',
+                            'https://www.vectorlogo.zone/logos/postgresql/postgresql-card.png',
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1280px-SQLite370.svg.png',
+                          'https://banner2.kisspng.com/20180503/cee/kisspng-web-development-html-css3-the-ohana-code-logo-2cpaper-projection-shaded_1660937-html-dropdown-js-5aebd5631cd291.7591600015254050271181.jpg'];
+
+          // console.log(imageArr);
+
+          const imgBox = document.createElement('DIV');
+          imgBox.setAttribute('id','langBox');
+
+          imageArr.forEach(tag => { let img = document.createElement('IMG');
+            img.setAttribute('id', `img-${imageArr.indexOf(tag)}`)
+            img.setAttribute('class', `animated fadeInRight delay-${imageArr.indexOf(tag)}s`);
+            img.setAttribute('src', `${tag}`);
+            imgBox.appendChild(img);
+
+        } )
+
+        const divBox = document.getElementById('greetTwo');
+        divBox.appendChild(imgBox);
+
 
         } else if (event.target.innerText === 'Message Me') {
 
@@ -167,6 +188,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const aboutBox = document.getElementById('ABOUTME');
         const hobbyBox = document.getElementById('HOBBY');
         const louisImage = document.getElementById('left');
+      if(event.target === louisImage) {
+        window.location.reload();
+      }
 
       if (hobCount > 0) {
          if (hobbyBox === null) {
