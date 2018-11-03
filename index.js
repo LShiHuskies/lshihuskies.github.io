@@ -50,12 +50,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     const handleDivBox = (event) => {
       const aboutBox = document.getElementById('ABOUTME');
+      const hobbyBox = document.getElementById('HOBBY');
+
       if (event.target.innerText === 'About Me'
       || event.target.innerText === 'Hobbies'
       || event.target.innerText === 'Technical'
       || event.target.innerText === 'Message Me') {
         if (aboutBox !== null) {
           aboutBox.remove();
+        }
+        if (hobbyBox !== null) {
+
+          hobbyBox.remove();
         }
       }
       if (event.target.innerText === 'About Me') {
@@ -92,22 +98,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
         } else if (event.target.innerText === 'Hobbies') {
+
           const hobbyBox = document.createElement('DIV');
+
           hobbyBox.setAttribute('id', 'HOBBY');
+
           const hobbies = ['First and foremost I really love programming, if you ever want me to help design your website or need any assistance with programming, please do not hesitate to contact me.',
                             'When I am not programming, I enjoy playing Poker, I specialize in No-Limit Texas Holdem Cash Games but also play Pot Limit Ohama, both High and Low',
                           'I also enjoy playing Chess, I grew up playing both Chinese Chess as well as Chess.',
                           'I enjoy Taekwondo, specifically Olympic Style Taekwondo and currently hold a Black Belt',
                           'I enjoy watching Basketball, both College Basketball and NBA; my favorite College Team is my UCONN Huskies and my favorite NBA team is the Boston Celtics',
                           'I also enjoy giving back to the community through voluneering and doing charitable work.'];
-          const hobbyImage = ["<img src='https://kitelytech.com/wp-content/uploads/bfi_thumb/SDLC-nfste0dogytlbv651sk1zl5aj6janw9ursan7ocnf8.png' />",
-          "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7kdd0DWPUGkXDn2sWzcJhhGDksoFqU7uIJgCKjgg5HNVdYFB' />",
-          "<img src='http://www.pngmart.com/files/3/Chess-PNG-Image.png' />", "<img src='http://www.millennium-tkd.co.uk/_/rsrc/1512172244760/home/sparring.png' />",
-          "<img src='https://banner2.kisspng.com/20180508/keq/kisspng-university-of-connecticut-connecticut-huskies-men-5af20fc1ddd505.4062305015258131859086.jpg' />",
-        "<img src='http://www.stickpng.com/assets/images/58419c6aa6515b1e0ad75a61.png' />", "<img src='https://www.sjffcc.org/images/volunteer_cartoon.png' />"];
 
-        console.log(hobbies);
-        console.log(hobbyImage);
+          const hobbyImage = [`<img id='imgTag-0' class='animated fadeInRight delay-0s' src='https://kitelytech.com/wp-content/uploads/bfi_thumb/SDLC-nfste0dogytlbv651sk1zl5aj6janw9ursan7ocnf8.png' />`,
+          `<img id='imgTag-1' class='animated fadeInRight delay-1s' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7kdd0DWPUGkXDn2sWzcJhhGDksoFqU7uIJgCKjgg5HNVdYFB' />`,
+          `<img id='imgTag-2' class='animated fadeInRight delay-2s' src='http://www.pngmart.com/files/3/Chess-PNG-Image.png' />`,
+          `<img id='imgTag-3' class='animated fadeInRight delay-3s' src='http://www.millennium-tkd.co.uk/_/rsrc/1512172244760/home/sparring.png' />`,
+          `<img id='imgTag-4' class='animated fadeInRight delay-4s' src='https://banner2.kisspng.com/20180508/keq/kisspng-university-of-connecticut-connecticut-huskies-men-5af20fc1ddd505.4062305015258131859086.jpg' />`,
+        `<img id='imgTag-5' class='animated fadeInRight delay-4s' src='http://www.stickpng.com/assets/images/58419c6aa6515b1e0ad75a61.png' />`,
+        `<img id='imgTag-6' class='animated fadeInRight delay-5s' src='https://www.sjffcc.org/images/volunteer_cartoon.png' />`];
+
+        // console.log(hobbies);
+        // console.log(hobbyImage);
 
         hobbies.forEach(element => { let pTag = document.createElement('P');
 
@@ -116,19 +128,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
             pTag.innerText = element;
             hobbyBox.appendChild(pTag)
           } else if (hobbies.indexOf(element) === 5) {
-            setTimeout(function handleSix() {
-              let pTag = document.createElement('P');
-              pTag.setAttribute('class', `animated fadeInRight delay-${hobbies.indexOf(element)}s`);
-              pTag.innerText = element;
-              hobbyBox.appendChild(pTag)
-            }, 1000);
+            pTag.innerText = element;
+            hobbyBox.appendChild(pTag)
+            // setTimeout(function handleSix() {
+            //   let pTag = document.createElement('P');
+            //   pTag.setAttribute('class', `animated fadeInRight delay-${hobbies.indexOf(element)}s`);
+            //   pTag.innerText = element;
+            //   hobbyBox.appendChild(pTag);
+            // }, 5000);
           }
           const divBox = document.getElementById('greetTwo');
+
           divBox.appendChild(hobbyBox);
+
         } )
 
+        hobbyImage.forEach(imgTag => {
 
-
+          const body = document.getElementById('body');
+          body.innerHTML += imgTag;
+        })
 
 
         } else if (event.target.innerText === 'Technical') {
