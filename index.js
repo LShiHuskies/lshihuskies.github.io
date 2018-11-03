@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let count = 0;
       let hobCount = 0;
       const body = document.getElementById('body');
-      const louisImage = document.getElementById('left')
+      const louisImage = document.getElementById('left');
       louisImage.addEventListener('click', (event) => {
         if (event.target.id === 'left') {
           handleClick(event);
@@ -166,20 +166,35 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         const aboutBox = document.getElementById('ABOUTME');
         const hobbyBox = document.getElementById('HOBBY');
+        const louisImage = document.getElementById('left');
 
       if (hobCount > 0) {
          if (hobbyBox === null) {
           hobCount = 0;
           handleDivBox(event)
-        } else if (hobbyBox !== null && event.target.innerText === 'Hobbies') {
-            let query = document.querySelectorAll('IMG');
-            let arr = Array.from(query);
+        } else if (hobbyBox !== null) {
+            if (event.target.innerText === 'Hobbies'
+            || event.target.innerText === 'About Me'
+            || event.target.innerText === 'Technical'
+            || event.target.innerText === 'Message Me') {
+              let query = document.querySelectorAll('IMG');
+              let arr = Array.from(query);
 
-            let obj = arr.filter(tag => tag.id !== 'resume' && tag.id !== 'linkedin' && tag.id !== 'github');
-            obj.forEach(tag => tag.remove());
-            hobbyBox.remove();
+              let obj = arr.filter(tag => tag.id !== 'resume' && tag.id !== 'linkedin' && tag.id !== 'github');
+              obj.forEach(tag => tag.remove());
+              hobbyBox.remove();
+            } else if (event.target === louisImage) {
+              let query = document.querySelectorAll('IMG');
+              let arr = Array.from(query);
+
+              let obj = arr.filter(tag => tag.id !== 'resume' && tag.id !== 'linkedin' && tag.id !== 'github');
+              obj.forEach(tag => tag.remove());
+              const divBox = document.getElementsByClassName('boxes')[0];
+              divBox.remove();
+              window.location.reload();
+            }
+          }
         }
-      }
       hobCount++;
     }
 
