@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       const aboutBox = document.getElementById('ABOUTME');
       const hobbyBox = document.getElementById('HOBBY');
       const imgBox = document.getElementById('langBox');
+      const hobbyImageBox = document.getElementById('IMAGEBOX');
 
       if (event.target.innerText === 'About Me'
       || event.target.innerText === 'Hobbies'
@@ -69,6 +70,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (imgBox !== null) {
           imgBox.remove();
         }
+        if ( hobbyImageBox !== null) {
+          hobbyImageBox.remove();
+        }
+
       }
       if (event.target.innerText === 'About Me') {
 
@@ -152,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         const body =  document.getElementById('body');
         body.appendChild(hobbyImageBox);
-        debugger;
+
         body.addEventListener('click', (event) => {
           handleTheWholeBody(event);
         })
@@ -237,6 +242,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const aboutBox = document.getElementById('ABOUTME');
         const hobbyBox = document.getElementById('HOBBY');
         const louisImage = document.getElementById('left');
+        const hobbyImageBox = document.getElementById('IMAGEBOX');
       if(event.target === louisImage) {
         window.location.reload();
       }
@@ -256,6 +262,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               let obj = arr.filter(tag => tag.id !== 'resume' && tag.id !== 'linkedin' && tag.id !== 'github');
               obj.forEach(tag => tag.remove());
               hobbyBox.remove();
+              hobbyImageBox.remove();
             } else if (event.target === louisImage) {
               let query = document.querySelectorAll('IMG');
               let arr = Array.from(query);
@@ -264,6 +271,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               obj.forEach(tag => tag.remove());
               const divBox = document.getElementsByClassName('boxes')[0];
               divBox.remove();
+              hobbyImageBox.remove();
               window.location.reload();
             }
           }
