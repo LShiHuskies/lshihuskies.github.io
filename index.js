@@ -149,8 +149,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         hobbyImage.forEach(imgTag => {
 
-          // const body = document.getElementById('body');
-          // body.innerHTML += imgTag;
           hobbyImageBox.innerHTML += imgTag
         })
 

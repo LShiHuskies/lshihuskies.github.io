@@ -309,87 +309,86 @@ a:hover {
   font-size: 16px;
   color: black;
   margin-left: 130px;
+  align-items: left;
+  justify-content: left;
 }
 
 #img-0 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 23%;
-  left: 23%;
+  width: 20%;
+  height: 30%;
+  margin-left: 0%;
+  margin-top: 2%;
+  display: inline-block;
 }
 
 #img-1 {
-  width: 24%;
-  height: 18%;
-  position: absolute;
-  top: 23%;
-  left: 43%;
+  width: 36%;
+  height: 30%;
+  margin-left: 40px;
+  display: inline-block;
 }
 
 #img-2 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 23%;
-  left: 73%;
+  width: 20%;
+  height: 30%;
+  margin-left: 40px;
+  display: inline-block;
 }
 
 #img-3 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 48%;
-  left: 23%;
+  width: 20%;
+  height: 30%;
+  margin-left: 3px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #img-4 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 48%;
-  left: 40%;
+  width: 20%;
+  height: 30%;
+  margin-left: 30px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #img-5 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 48%;
-  left: 56%;
+  width: 20%;
+  height: 30%;
+  margin-left: 30px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #img-6 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 48%;
-  left: 72%;
-
+  width: 20%;
+  height: 30%;
+  margin-left: 0px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #img-7 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 73%;
-  left: 23%;
+  width: 20%;
+  height: 30%;
+  margin-left: 0px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #img-8 {
-  width: 12%;
-  height: 18%;
-  position: absolute;
-  top: 73%;
-  left: 40%;
+  width: 20%;
+  height: 30%;
+  margin-left: 40px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #img-9 {
-  width: 24%;
-  height: 18%;
-  position: absolute;
-  top: 73%;
-  left: 58%;
+  width: 36%;
+  height: 30%;
+  margin-left: 40px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #IMAGEBOX {
