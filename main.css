@@ -112,7 +112,7 @@ button:hover {
   position: absolute;
   width: 10%;
   height: 10%;
-  top: 90%;
+  bottom: 0%;
   left: 0%;
 }
 
@@ -211,7 +211,7 @@ a:hover {
 }
 
 .project:hover {
-  border: 10px solid red;
+  border: 4px double red;
   color: blue;
 }
 
@@ -225,6 +225,7 @@ a:hover {
 #secondOne {
   width: 100px;
   margin-left: 5px;
+  margin-top: 4%
 }
 
 #firstVertical {
@@ -254,10 +255,10 @@ a:hover {
 
 #imgTag-0 {
   position: absolute;
-  width: 27%;
-  height: 27%;
-  margin-left: 15%;
-  margin-top: -7%;
+  width: 20%;
+  height: 20%;
+  margin-left: -20%;
+  margin-top: -17%;
 }
 
 
@@ -265,16 +266,16 @@ a:hover {
   position: absolute;
   width: 15%;
   height: 15%;
-  margin-left: 40%;
-  margin-top: -3%;
+  margin-left: 0%;
+  margin-top: -17%;
 }
 
 #imgTag-2 {
   position: absolute;
-  width: 15%;
-  height: 15%;
-  margin-left: 60%;
-  margin-top: -3%;
+  width: 12%;
+  height: 12%;
+  margin-left: 20%;
+  margin-top: -15%;
 }
 
 #imgTag-3 {
