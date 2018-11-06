@@ -41,47 +41,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     const makeVerticalNavBar = () => {
-      // let secondOne = document.createElement('UL');
-      // secondOne.setAttribute('id', 'secondOne');
-      // let firstVerticalClass = document.createElement('LI');
-      // firstVerticalClass.setAttribute('class', 'vertical');
-      // let firstVertical = document.createElement('A');
-      // firstVertical.setAttribute('id', 'firstVertical');
-      // firstVertical.innerText = 'About Me';
-      //
-      // firstVerticalClass.appendChild(firstVertical);
-      // secondOne.appendChild(firstVerticalClass);
-      //
-      //
-      // let secondVerticalClass = document.createElement('LI');
-      // secondVerticalClass.setAttribute('class', 'vertical');
-      //
-      // let secondVertical = document.createElement('A');
-      // secondVertical.setAttribute('id', 'notfirstVertical');
-      // secondVertical.innerText = 'Hobbies';
-      //
-      // secondVerticalClass.appendChild(secondVertical);
-      // secondOne.appendChild(secondVerticalClass);
-      //
-      // let thirdVerticalClass = document.createElement('LI');
-      // thirdVerticalClass.setAttribute('class', 'vertical');
-      //
-      // let thirdVertical = document.createElement('A');
-      // thirdVertical.setAttribute('id', 'notfirstVertical');
-      // thirdVertical.innerText = 'Technical';
-      //
-      // thirdVerticalClass.appendChild(thirdVertical);
-      // secondOne.appendChild(thirdVerticalClass);
-      //
-      // let fourthVerticalClass = document.createElement('LI');
-      // fourthVerticalClass.setAttribute('class', 'vertical');
-      //
-      // let fourthVertical = document.createElement('A');
-      // fourthVertical.setAttribute('id', 'notfirstVertical');
-      // fourthVertical.innerText = 'Message Me';
-      //
-      // fourthVerticalClass.appendChild(fourthVertical);
-      // secondOne.appendChild(fourthVerticalClass);
 
       let vertical = `<ul id='secondOne'>
                       <li class='vertical'><a id='firstVertical'> About Me </a></li>
@@ -180,16 +139,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
           divBox.appendChild(hobbyBox);
 
         } )
+        const hobbyImageBox = document.createElement('DIV');
+        hobbyImageBox.setAttribute('id', 'IMAGEBOX');
 
         hobbyImage.forEach(imgTag => {
 
-          const body = document.getElementById('body');
-          body.innerHTML += imgTag;
+          // const body = document.getElementById('body');
+          // body.innerHTML += imgTag;
+          hobbyImageBox.innerHTML += imgTag
         })
+
+
         const body =  document.getElementById('body');
+        body.appendChild(hobbyImageBox);
+        debugger;
         body.addEventListener('click', (event) => {
           handleTheWholeBody(event);
         })
+
+
 
         } else if (event.target.innerText === 'Technical') {
           const languagesBox = ['JavaScript', 'Ruby', 'C++', 'SQL'];
