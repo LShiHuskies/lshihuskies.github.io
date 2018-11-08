@@ -13,12 +13,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
           let trial = document.getElementsByClassName('boxes')[0];
           count--;
           trial.remove();
-        } else if (event.target.innerText === 'Free-Online Poker App' && count === 0) {
+        } else if (event.target.innerText === 'Free-Online Poker App'
+        || event.target.innerText === 'Z Warriors Action Game'
+        || event.target.innerText === 'SpaceShooter App'
+        || event.target.innerText === 'Career Guidance App'
+        && count === 0) {
 
           if (techBox === null) {
             const techBox = document.createElement('DIV');
             techBox.setAttribute('id', 'techProjects');
             body.appendChild(techBox);
+            if (event.target.innerText === 'Free-Online Poker App') {
+              const ul = document.createElement('UL');
+              ul.setAttribute('id', 'soon');
+              ul.innerText = 'Coming Soon!!!';
+              techBox.appendChild(ul);
+              const iveyImage = document.createElement('IMG');
+              iveyImage.setAttribute('src', 'https://www.highstakesdb.com/images/Players/20180329090557_705x365.jpg');
+              iveyImage.setAttribute('id', 'ivey');
+              techBox.appendChild(iveyImage);
+            }
           } else if (techBox !== null) {
             techBox.remove();
           }
