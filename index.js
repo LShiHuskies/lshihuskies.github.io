@@ -37,12 +37,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 div.setAttribute('id', 'warriors');
                 div.innerText = 'Z Warriors Action Game';
                 techBox.appendChild(div);
-                let video = `<video id='zvideo' width="350" height="250" controls>
+                let video = `<video id='zvideo' height="250" controls>
                   <source src="./assets/DBZ.mp4" type="video/mp4">
                   Your browser does not support the video tag.
-                </video>`
+                </video>`;
+
+                let content = `<div id='content'>
+                <p class='animated fadeInUp delay-1s' > An action pack multiplayer game incorporating
+                teamwork and co-op play inspired by Dragon Ball Z. </p>
+                <p id='description' class='animated fadeInRight delay-2s'> Integrated WebSocket to allow multiple users to be logged in from different computers and play together, join forces,
+                and combat against a computer that will fight back
+                </p>
+                <p id='description' class='animated fadeInRight delay-3s'> Incorporated complex logic on frontend React-Redux and backend Ruby on Rails for collision detection and player teleportation
+                capabilities, mirroring all movements to all users’ screen to maximize user experience, and difficulty based on current level </p>
+
+                <p id='description' class='animated fadeInRight delay-4s'> Integrated JWT authentication to ensure secure login and secure data </p>
+
+                </div>`
+
                 techBox.innerHTML += video;
 
+                techBox.innerHTML += content;
             }
           } else if (techBox !== null) {
             techBox.remove();
