@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 </video>`;
 
                 let content = `<div id='content'>
-                <p class='animated fadeInUp delay-1s' > An action pack multiplayer game incorporating
-                teamwork and co-op play inspired by Dragon Ball Z. </p>
+                <p class='animated fadeInUp delay-1s'> An action pack multiplayer game incorporating
+                teamwork and co-op play inspired by Dragon Ball Z </p>
                 <p id='description' class='animated fadeInRight delay-2s'> Integrated WebSocket to allow multiple users to be logged in from different computers and play together, join forces,
                 and combat against a computer that will fight back
                 </p>
@@ -64,6 +64,43 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 <li class='horizontal'><a class='notFirst' href="https://intense-waters-55861.herokuapp.com/" target='_blank'>Heroku</a></li>
                 </ul> `;
                 techBox.innerHTML += horizontalNav;
+            } else if (event.target.innerText === 'SpaceShooter App') {
+              const div = document.createElement('DIV');
+              div.setAttribute('id', 'warriors');
+              div.innerText = 'SpaceShooter App';
+              techBox.appendChild(div);
+              let video = `<video id='zvideo' height="250" controls>
+                <source src="./assets/DBZ.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>`;
+
+              let content = `<div id='content'>
+              <p class='animated fadeInUp delay-1s'> A single player SpaceShip traveler game that shoots planets, inspired by Asteroids
+               </p>
+              <p id='description' class='animated fadeInRight delay-2s'> Integrated JavaScript, React, HTML, and CSS and leveraged dynamic,
+              asynchronous states to foster a complete game experience
+                by communicating with Ruby on Rails backend to store essential data
+              </p>
+              <p id='description' class='animated fadeInRight delay-3s'>
+              Incorporated detailed game logic and mathematical analysis for collision detection, spaceship interval increases, planet speed
+              increases based on score, and React prop/state updates accordingly to game status
+              </p>
+
+              <p id='description' class='animated fadeInRight delay-4s'>
+              Utilized Higher Order Components to properly reuse React Component logic and maintain React Component lifecycle methods
+              </p>
+
+              </div>`
+
+              techBox.innerHTML += video;
+
+              techBox.innerHTML += content;
+              let horizontalNav = ` <ul id='warriorHorizontal'>
+              <li class='horizontal'><a href="https://github.com/LShiHuskies/ModProject" target='_blank'> GitHub APP </a></li>
+              <li class='horizontal'><a class='notFirst' href="https://github.com/LShiHuskies/ModProject/tree/master/dragonWarriorBackend" target='_blank'>GitHub API</a></li>
+              <li class='horizontal'><a class='notFirst' href="https://intense-waters-55861.herokuapp.com/" target='_blank'>Heroku</a></li>
+              </ul> `;
+              techBox.innerHTML += horizontalNav;
             }
           } else if (techBox !== null) {
             techBox.remove();
