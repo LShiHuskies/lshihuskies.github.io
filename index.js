@@ -3,6 +3,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let hobCount = 0;
       const body = document.getElementById('body');
       const louisImage = document.getElementById('left');
+
+
+      const technical = document.getElementById('technical');
+      technical.addEventListener('click', function(event) {
+        const techBox = document.getElementById('techProjects');
+
+        if (count === 1) {
+          let trial = document.getElementsByClassName('boxes')[0];
+          count--;
+          trial.remove();
+        } else if (event.target.innerText === 'Free-Online Poker App' && count === 0) {
+
+          if (techBox === null) {
+            const techBox = document.createElement('DIV');
+            techBox.setAttribute('id', 'techProjects');
+            body.appendChild(techBox);
+          } else if (techBox !== null) {
+            techBox.remove();
+          }
+
+        }
+      })
+
       louisImage.addEventListener('click', (event) => {
         if (event.target.id === 'left') {
           handleClick(event);
@@ -11,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     const handleClick = (event) => {
       if (count === 0) {
+        const techBox = document.getElementById('techProjects');
+        if (techBox !== null) {
+          techBox.remove();
+        }
         count++;
       } else if (count === 1) {
         count--;
@@ -46,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                       <li class='vertical'><a id='firstVertical'> About Me </a></li>
                       <li class='vertical'><a id='notfirstVertical'>Hobbies</a></li>
                       <li class='vertical'><a id='notfirstVertical'>Technical</a></li>
-                      <li class='vertical'><a id='notfirstVertical'>Message Me</a></li>
+                      <li class='vertical'><a id='notfirstVertical' href="mailto: Shi.Louis2@gmail.com" target='_blank' >Message Me</a></li>
                   </ul>`
       return vertical;
     }

@@ -398,3 +398,10 @@ a:hover {
   margin-top: 10px;
   margin-right: 2%;
 }
+
+#techProjects {
+  width: 700px;
+  height: 400px;
+  background-color: gray;
+  margin-right: 2%;
+}
