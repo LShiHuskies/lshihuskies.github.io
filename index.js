@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               div.innerText = 'SpaceShooter App';
               techBox.appendChild(div);
               let video = `<video id='zvideo' height="250" controls>
-                <source src="./assets/DBZ.mp4" type="video/mp4">
+                <source src="./assets/SpaceShooter.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>`;
 
@@ -96,9 +96,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
               techBox.innerHTML += content;
               let horizontalNav = ` <ul id='warriorHorizontal'>
-              <li class='horizontal'><a href="https://github.com/LShiHuskies/ModProject" target='_blank'> GitHub APP </a></li>
-              <li class='horizontal'><a class='notFirst' href="https://github.com/LShiHuskies/ModProject/tree/master/dragonWarriorBackend" target='_blank'>GitHub API</a></li>
-              <li class='horizontal'><a class='notFirst' href="https://intense-waters-55861.herokuapp.com/" target='_blank'>Heroku</a></li>
+              <li class='horizontal'><a href="https://github.com/LShiHuskies/spaceshooterapp" target='_blank'> GitHub APP </a></li>
+              <li class='horizontal'><a class='notFirst' href="https://github.com/LShiHuskies/space-shooter-api" target='_blank'>GitHub API</a></li>
+              <li class='horizontal'><a class='notFirst' href="https://blooming-garden-39476.herokuapp.com/" target='_blank'>Heroku</a></li>
               </ul> `;
               techBox.innerHTML += horizontalNav;
             }
