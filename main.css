@@ -404,6 +404,10 @@ a:hover {
   height: 400px;
   background-color: gray;
   margin-right: 2%;
+
+}
+
+.poker {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -419,4 +423,15 @@ a:hover {
   text-align: center;
   font-size: 30px;
   -webkit-animation: colorchange 100s alternate;
+}
+
+#warriors{
+  text-align: center;
+  font-size: 30px;
+  -webkit-animation: colorchange 100s alternate;
+}
+
+#zvideo {
+  margin-left: 25%;
+  margin-top: 1%;
 }

@@ -32,6 +32,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
               iveyImage.setAttribute('src', 'https://www.highstakesdb.com/images/Players/20180329090557_705x365.jpg');
               iveyImage.setAttribute('id', 'ivey');
               techBox.appendChild(iveyImage);
+            } else if (event.target.innerText === 'Z Warriors Action Game') {
+                const div = document.createElement('DIV');
+                div.setAttribute('id', 'warriors');
+                div.innerText = 'Z Warriors Action Game';
+                techBox.appendChild(div);
+                let video = `<video id='zvideo' width="350" height="250" controls>
+                  <source src="./assets/DBZ.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>`
+                techBox.innerHTML += video;
+
             }
           } else if (techBox !== null) {
             techBox.remove();
