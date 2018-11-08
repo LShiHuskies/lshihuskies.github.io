@@ -58,6 +58,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 techBox.innerHTML += video;
 
                 techBox.innerHTML += content;
+                let horizontalNav = ` <ul id='warriorHorizontal'>
+                <li class='horizontal'><a href="https://github.com/LShiHuskies/ModProject" target='_blank'> GitHub APP </a></li>
+                <li class='horizontal'><a class='notFirst' href="https://github.com/LShiHuskies/ModProject/tree/master/dragonWarriorBackend" target='_blank'>GitHub API</a></li>
+                <li class='horizontal'><a class='notFirst' href="https://intense-waters-55861.herokuapp.com/" target='_blank'>Heroku</a></li>
+                </ul> `;
+                techBox.innerHTML += horizontalNav;
             }
           } else if (techBox !== null) {
             techBox.remove();

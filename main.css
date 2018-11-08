@@ -452,3 +452,10 @@ a:hover {
 #description {
   font-weight: normal;
 }
+
+#warriorHorizontal {
+  margin-top: 30px;
+  margin-left: 23.5%;
+  margin-right: 23.5%;
+  width: 368px;
+}
