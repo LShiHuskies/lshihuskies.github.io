@@ -417,11 +417,15 @@ a:hover {
 #ivey {
   width: 350px;
   height: 200px;
+  margin-left: 25%;
+  margin-top: 8%;
 }
 
 #soon {
   text-align: center;
   font-size: 30px;
+  margin-left: 15%;
+  margin-top: 2%;
   -webkit-animation: colorchange 100s alternate;
 }
 
