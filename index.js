@@ -1,9 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
       let count = 0;
       let hobCount = 0;
+      let timer = 0;
+
       const body = document.getElementById('body');
       const louisImage = document.getElementById('left');
 
+
+      setTimeout(function showMessage() {
+            message.remove();
+      }, 6000);
+
+      if (count === 0 && hobCount === 0 && timer === 0) {
+        const message = document.createElement('H4');
+        message.setAttribute('id', 'message');
+        message.setAttribute('class', 'animated bounce infinite');
+        message.innerText = 'Click my image or any of the technical projects for information';
+        body.appendChild(message);
+      }
 
       const technical = document.getElementById('technical');
       technical.addEventListener('click', function(event) {
