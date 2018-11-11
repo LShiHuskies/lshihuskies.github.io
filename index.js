@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               div.innerText = 'SpaceShooter App';
               techBox.appendChild(div);
               let video = `<video id='zvideo' height="250" controls>
-                <source src="./assets/SpaceShooter.mp4" type="video/mp4">
+                <source src="./assets/SpaceShipShooter.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>`;
 
@@ -101,6 +101,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
               <li class='horizontal'><a class='notFirst' href="https://blooming-garden-39476.herokuapp.com/" target='_blank'>Heroku</a></li>
               </ul> `;
               techBox.innerHTML += horizontalNav;
+            } else if (event.target.innerText === 'Career Guidance App') {
+
             }
           } else if (techBox !== null) {
             techBox.remove();
