@@ -102,7 +102,39 @@ document.addEventListener("DOMContentLoaded", function(event) {
               </ul> `;
               techBox.innerHTML += horizontalNav;
             } else if (event.target.innerText === 'Career Guidance App') {
+              const div = document.createElement('DIV');
+              div.setAttribute('id', 'warriors');
+              div.innerText = 'Career Guidance App';
+              techBox.appendChild(div);
+              let video = `<video id='zvideo' height="250" controls>
+                <source src="./assets/CareerGuideApp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>`;
 
+              let content = `<div id='content'>
+              <p class='animated fadeInUp delay-1s'> A career and job search guide for technical programmers/developers, inspired by Indeed and LinkedIn
+               </p>
+              <p id='description' class='animated fadeInRight delay-2s'> Built full-stack application utilizing the Active Record Associations
+              Library with HTML/CSS, Bootstrap, and Ruby on Rails </p>
+              <p id='description' class='animated fadeInRight delay-3s'>
+              Integrated Adzuna API to fetch jobs data and used CRUD to enable searching for, saving, and applying to jobs, and profile editing
+              </p>
+
+              <p id='description' class='animated fadeInRight delay-4s'>
+              Incorporated validation logins to ensure secure login for all users, and SQL queries to maintain and manage the database
+              </p>
+
+              </div>`
+
+              techBox.innerHTML += video;
+
+              techBox.innerHTML += content;
+              let horizontalNav = ` <ul id='warriorHorizontal'>
+              <li class='horizontal'><a href="https://github.com/LShiHuskies/CareerGuideApp" target='_blank'> GitHub APP </a></li>
+
+              <li class='horizontal'><a class='notFirst' href="https://careerguideapp.herokuapp.com/" target='_blank'>Heroku</a></li>
+              </ul> `;
+              techBox.innerHTML += horizontalNav;
             }
           } else if (techBox !== null) {
             techBox.remove();
