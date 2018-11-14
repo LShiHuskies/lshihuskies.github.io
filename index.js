@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       setTimeout(function showMessage() {
             message.remove();
-      }, 6000);
+      }, 8000);
 
       if (count === 0 && hobCount === 0 && timer === 0) {
         const message = document.createElement('H4');
