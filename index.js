@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       const technical = document.getElementById('technical');
       technical.addEventListener('click', function(event) {
         const techBox = document.getElementById('techProjects');
+        const hobbyImageBox = document.getElementById('IMAGEBOX');
+        if (hobbyImageBox !== null ) {
+          hobbyImageBox.remove();
+        }
 
         if (count === 1) {
           let trial = document.getElementsByClassName('boxes')[0];
