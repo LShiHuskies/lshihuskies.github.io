@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 techBox.innerHTML += video;
 
                 techBox.innerHTML += content;
-                let horizontalNav = ` <ul id='warriorHorizontal'>
+                let horizontalNav = ` <ul class='warriorHorizontal'>
                 <li class='horizontal'><a href="https://github.com/LShiHuskies/ModProject" target='_blank'> GitHub APP </a></li>
                 <li class='horizontal'><a class='notFirst' href="https://github.com/LShiHuskies/ModProject/tree/master/dragonWarriorBackend" target='_blank'>GitHub API</a></li>
                 <li class='horizontal'><a class='notFirst' href="https://intense-waters-55861.herokuapp.com/" target='_blank'>Heroku</a></li>
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               techBox.innerHTML += video;
 
               techBox.innerHTML += content;
-              let horizontalNav = ` <ul id='warriorHorizontal'>
+              let horizontalNav = ` <ul class='warriorHorizontal'>
               <li class='horizontal'><a href="https://github.com/LShiHuskies/spaceshooterapp" target='_blank'> GitHub APP </a></li>
               <li class='horizontal'><a class='notFirst' href="https://github.com/LShiHuskies/space-shooter-api" target='_blank'>GitHub API</a></li>
               <li class='horizontal'><a class='notFirst' href="https://blooming-garden-39476.herokuapp.com/" target='_blank'>Heroku</a></li>
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               techBox.innerHTML += video;
 
               techBox.innerHTML += content;
-              let horizontalNav = ` <ul id='warriorHorizontal'>
+              let horizontalNav = ` <ul class='warriorHorizontal', id='career'>
               <li class='horizontal'><a href="https://github.com/LShiHuskies/CareerGuideApp" target='_blank'> GitHub APP </a></li>
 
               <li class='horizontal'><a class='notFirst' href="https://careerguideapp.herokuapp.com/" target='_blank'>Heroku</a></li>

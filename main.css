@@ -435,6 +435,7 @@ a:hover {
   text-align: center;
   font-size: 30px;
   -webkit-animation: colorchange 100s alternate;
+  margin-top: 2%;
 }
 
 #zvideo {
@@ -459,9 +460,13 @@ a:hover {
   font-weight: normal;
 }
 
-#warriorHorizontal {
-  margin-top: 45px;
+.warriorHorizontal {
   margin-left: 23.5%;
   margin-right: 23.5%;
   width: 368px;
+  margin-top: 35px;
+}
+
+#career {
+  margin-top: 49px;
 }
