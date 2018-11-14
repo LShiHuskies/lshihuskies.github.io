@@ -240,12 +240,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         aboutBox.setAttribute('id', 'ABOUTME');
         // aboutBox.setAttribute('class', 'animated fadeInRight delay-0.5s')
         // console.log(aboutBox);
-        const arrInfo = ['My name is Louis Shi', 'I am a software developer and I turn ideas into reality through programming',
-                          'I graduated from the University of Connecticut',
-                          'I worked in Insurance for a couple years handling Bodily Injury Claims for GEICO where I consistently produced one of the highest performance metrics in the company',
-                          'Through online programming tutorials and an Introduction of Computer Science Night course I discovered my passion for programming',
-                          'I enrolled in Flatiron School Software Engineering Immersive program where I continued to build various projects such as Z Warriors Action Game, Space Shooter App and Career Guidance App demonstrating strong skills in Ruby, Ruby on Rails, JavaScript, React, Redux, HTML, CSS, SQL, PostgreSQL and WebSocket',
-                        'I realize that throughout my journey being a developer has always been a natural extension of myself and that I have always been a developer',
+        const arrInfo = ['My name is Louis Shi.', 'I am a software developer and I turn ideas into reality through programming.',
+                          'I graduated from the University of Connecticut.',
+                          'I worked in Insurance for a couple years handling Bodily Injury Claims for GEICO where I consistently produced one of the highest performance metrics in the company.',
+                          'Through online programming tutorials and an Introduction of Computer Science Night course I discovered my passion for programming.',
+                          'I enrolled in Flatiron School Software Engineering Immersive program where I continued to build various projects such as Z Warriors Action Game, Space Shooter App and Career Guidance App demonstrating strong skills in Ruby, Ruby on Rails, JavaScript, React, Redux, HTML, CSS, SQL, PostgreSQL and WebSocket.',
+                        'I realize that throughout my journey being a developer has always been a natural extension of myself and that I have always been a developer.',
                       ];
 
         arrInfo.forEach(element => { let pTag = document.createElement('P');
@@ -274,10 +274,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
           hobbyBox.setAttribute('id', 'HOBBY');
 
           const hobbies = ['First and foremost I really love programming, if you ever want me to help design your website or need any assistance with programming, please do not hesitate to contact me.',
-                            'When I am not programming, I enjoy playing Poker, I specialize in No-Limit Texas Holdem Cash Games but also play Pot Limit Omaha, both High and Low',
+                            'When I am not programming, I enjoy playing Poker, I specialize in No-Limit Texas Holdem Cash Games but also play Pot Limit Omaha, both High and Low.',
                           'I also enjoy playing Chess, I grew up playing both Chinese Chess as well as Chess.',
-                          'I enjoy Taekwondo, specifically Olympic Style Taekwondo and currently hold a Black Belt',
-                          'I enjoy watching Basketball, both College Basketball and NBA; my favorite College Team is my UCONN Huskies and my favorite NBA team is the Boston Celtics',
+                          'I enjoy Taekwondo, specifically Olympic Style Taekwondo and currently hold a Black Belt.',
+                          'I enjoy watching Basketball, both College Basketball and NBA; my favorite College Team is my UCONN Huskies and my favorite NBA team is the Boston Celtics.',
                           'I also enjoy giving back to the community through voluneering and doing charitable work.'];
 
           const hobbyImage = [`<img id='imgTag-0' class='animated fadeInRight delay-0s' src='https://kitelytech.com/wp-content/uploads/bfi_thumb/SDLC-nfste0dogytlbv651sk1zl5aj6janw9ursan7ocnf8.png' />`,
